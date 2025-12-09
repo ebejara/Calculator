@@ -1,0 +1,43 @@
+cmake_minimum_required(VERSION 3.14)  # Needed for FetchContent
+project(CalculatorProject LANGUAGES CXX)
+
+# --- C++ Standard ---
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# --- Main executable ---
+add_executable(calculator_app src/main.cpp)
+
+# Public headers are in include/
+target_include_directories(calculator_app PRIVATE include)
+
+# --- GoogleTest (automatically downloaded) ---
+include(FetchContent)
+
+FetchContent_Declare(
+    googletest
+    URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+    # For Windows users, avoid CRT conflicts
+)
+
+# For Windows: prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+
+# --- Test executable ---
+add_executable(tests 
+    tests/test_calculator.cpp
+)
+
+target_include_directories(tests PRIVATE include)
+
+target_link_libraries(tests 
+    GTest::gtest_main   # pulls in gtest + gtest_main
+)
+
+include(GoogleTest)
+gtest_discover_tests(tests)

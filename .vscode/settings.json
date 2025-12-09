@@ -1,0 +1,10 @@
+{
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/include"
+    ],
+    "C_Cpp.default.defines": [],
+    "files.associations": {
+        "*.h": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}

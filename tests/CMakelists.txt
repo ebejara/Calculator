@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.14)
+
+# Locate Gtest
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
+# Link runtests with what we want to test and  the Gtest and pthread library
+add_executable(runtests test_calcalator.cpp)
+target_link_libraries(runtests ${GTEST_LIBRARIES} pthread)

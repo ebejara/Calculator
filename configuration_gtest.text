@@ -1,0 +1,85 @@
+# 4. Configure with CORRECT flags for MinGW
+cmake -G "MinGW Makefiles" -DCMAKE_INSTALL_PREFIX="C:/Program Files/mingw64" -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release -Dgtest_force_shared_crt=ON -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DTHREADS_PREFER_PTHREAD_FLAG=OFF \ .
+
+# 4. Configure with CORRECT flags for MinGW
+cmake -G "MinGW Makefiles" \
+      -DCMAKE_INSTALL_PREFIX="C:/Program Files/mingw64" \
+      -DBUILD_SHARED_LIBS=OFF \
+      -DCMAKE_BUILD_TYPE=Release \
+      -Dgtest_force_shared_crt=ON \
+      -DCMAKE_POSITION_INDEPENDENT_CODE=ON \
+      -DTHREADS_PREFER_PTHREAD_FLAG=OFF \
+      .
+	  
+	  
+	  -Dgtest_force_shared_crt=ON
+-DCMAKE_POSITION_INDEPENDENT_CODE=ON
+-Dpthread=OFF
+
+# 1. Go to a temp folder
+mkdir -p $HOME/gtest-rebuild && cd $HOME/gtest-rebuild
+
+# 2. Download GoogleTest
+curl -L -o gtest.zip https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+unzip gtest.zip
+cd googletest-1.14.0
+
+# 3. CLEAN old install (optional but safe)
+rm -rf "C:/Program Files/mingw64/include/gtest"
+rm -rf "C:/Program Files/mingw64/include/gmock"
+rm -rf "C:/Program Files/mingw64/lib/libgtest*" "C:/Program Files/mingw64/lib/libgmock*"
+rm -rf "C:/Program Files/mingw64/lib/cmake/GTest"
+
+
+# 4. Configure with CORRECT flags for MinGW
+cmake -G "MinGW Makefiles" \
+      -DCMAKE_INSTALL_PREFIX="C:/Program Files/mingw64" \
+      -DBUILD_SHARED_LIBS=OFF \
+      -DCMAKE_BUILD_TYPE=Release \
+      -Dgtest_force_shared_crt=ON \
+      -DCMAKE_POSITION_INDEPENDENT_CODE=ON \
+      -DTHREADS_PREFER_PTHREAD_FLAG=OFF \
+      .
+
+# 5. Build & install
+mingw32-make -j%NUMBER_OF_PROCESSORS%
+mingw32-make install
+
+cd "C:\Users\enrique.bejarano\Documents\VScode\CI\Calculator\build"
+
+# Clean old build (optional)
+rm -r * -Force
+
+# Reconfigure
+cmake .. -G "MinGW Makefiles" -DCMAKE_TOOLCHAIN_FILE="C:/Program Files/mingw64/mingw64-toolchain.cmake"
+
+# Build
+cmake --build .
+
+done 
+
+File → Open Folder → C:\Users\enrique.bejarano\Documents\VScode\CI\Calculator
+
+
+settings.json
+{
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "C:/Program Files/mingw64/mingw64-toolchain.cmake"
+    },
+    "cmake preferredGenerators": [
+        "MinGW Makefiles"
+    ]
+}
+
+
+tasks.json
+{
+    "label": "CMake: Clean & Rebuild",
+    "type": "shell",
+    "command": "cmake --build ${workspaceFolder}/build --target clean && cmake --build ${workspaceFolder}/build",
+    "group": "build",
+    "problemMatcher": []
+}
