@@ -26,8 +26,8 @@ jobs:
             mingw-w64-x86_64-make
             mingw-w64-x86_64-python
             mingw-w64-x86_64-python-pip
-            mingw-w64-x86_64-libxml2  # This fixes lxml build!
-            mingw-w64-x86_64-libxslt   # Optional but good for lxml
+            mingw-w64-x86_64-libxml2
+            mingw-w64-x86_64-libxslt
 
       - name: Install gcovr
         shell: msys2 {0}
@@ -35,7 +35,11 @@ jobs:
 
       - name: Configure CMake (MinGW with coverage)
         shell: msys2 {0}
-        run: cmake -B build -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="--coverage -fprofile-arcs -ftest-coverage" -DCMAKE_C_FLAGS="--coverage -fprofile-arcs -ftest-coverage"
+        run: >
+          cmake -B build -G "MinGW Makefiles"
+          -DCMAKE_BUILD_TYPE=Debug
+          -DCMAKE_CXX_FLAGS="--coverage -fprofile-arcs -ftest-coverage"
+          -DCMAKE_C_FLAGS="--coverage -fprofile-arcs -ftest-coverage"
 
       - name: Build
         shell: msys2 {0}
