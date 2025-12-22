@@ -31,11 +31,11 @@ jobs:
           echo "C:\Program Files\OpenCppCoverage" >> $env:GITHUB_PATH
 
       - name: Debug - List built executables
-        run: dir build /s /b | findstr test_calculator.exe
+        run: Get-ChildItem -Path build -Recurse -Filter test_calculator.exe | Select-Object -ExpandProperty FullName
 
       - name: Generate coverage report
         run: |
-          OpenCppCoverage --sources=src* --export_type=cobertura:coverage.xml -- ./build/test_calculator.exe
+          OpenCppCoverage --sources=src* --export_type=cobertura:coverage.xml -- build/test_calculator.exe
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
