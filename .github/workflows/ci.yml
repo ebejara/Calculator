@@ -32,8 +32,10 @@ jobs:
 
       - name: Generate coverage report
         working-directory: build
+        shell: pwsh   # Explicitly use PowerShell (good practice)
         run: |
-          OpenCppCoverage --working_dir . --sources="${{ github.workspace }}\src*" --export_type=cobertura:coverage.xml -- ./test_calculator.exe
+          $exe = "${{ github.workspace }}\build\test_calculator.exe"
+          OpenCppCoverage --sources="${{ github.workspace }}\src*" --export_type=cobertura:coverage.xml -- $exe
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
