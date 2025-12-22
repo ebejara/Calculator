@@ -33,7 +33,7 @@ jobs:
       - name: Generate coverage report
         working-directory: build
         run: |
-          OpenCppCoverage --working_dir . --sources ${{ github.workspace }}\src* --export_type=cobertura:coverage.xml -- test_calculator.exe
+          OpenCppCoverage --working_dir . --sources="${{ github.workspace }}\src*" --export_type=cobertura:coverage.xml -- ./test_calculator.exe
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
