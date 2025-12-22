@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/test_calculator[1]_tests.cmake")
+  include("C:/Users/Enrique/Documents/VScode/CI/Calculator/build/test_calculator[1]_tests.cmake")
+else()
+  add_test(test_calculator_NOT_BUILT test_calculator_NOT_BUILT)
+endif()

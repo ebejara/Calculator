@@ -3,7 +3,9 @@
         {
             "name": "Win32",
             "includePath": [
-                "${default}"
+                "${default}",
+                "${workspaceFolder}/build/_deps/googletest-src/googletest/include"
+              
             ],
             "compilerPath": "C:\\Program Files\\mingw64\\bin\\gcc.exe",
             "cStandard": "c17",

@@ -1,0 +1,37 @@
+{
+  "tests": 5,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "CalculatorTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "Add",
+          "file": "C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\tests\\test_calculator.cpp",
+          "line": 4
+        },
+        {
+          "name": "Subtract",
+          "file": "C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\tests\\test_calculator.cpp",
+          "line": 10
+        },
+        {
+          "name": "Multiply",
+          "file": "C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\tests\\test_calculator.cpp",
+          "line": 16
+        },
+        {
+          "name": "Divide",
+          "file": "C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\tests\\test_calculator.cpp",
+          "line": 21
+        },
+        {
+          "name": "DivideByZero",
+          "file": "C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\tests\\test_calculator.cpp",
+          "line": 27
+        }
+      ]
+    }
+  ]
+}

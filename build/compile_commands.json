@@ -1,37 +1,37 @@
 [
 {
   "directory": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/calculator_app.dir/includes_CXX.rsp -g -std=c++20 -o CMakeFiles\\calculator_app.dir\\src\\main.cpp.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\src\\main.cpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/Calculator.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Calculator.dir\\src\\main.cpp.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\src\\main.cpp",
   "file": "C:/Users/Enrique/Documents/VScode/CI/Calculator/src/main.cpp",
-  "output": "CMakeFiles/calculator_app.dir/src/main.cpp.obj"
+  "output": "CMakeFiles/Calculator.dir/src/main.cpp.obj"
 },
 {
   "directory": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/tests.dir/includes_CXX.rsp -g -std=c++20 -o CMakeFiles\\tests.dir\\tests\\test_calculator.cpp.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\tests\\test_calculator.cpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/test_calculator.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_calculator.dir\\tests\\test_calculator.cpp.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\tests\\test_calculator.cpp",
   "file": "C:/Users/Enrique/Documents/VScode/CI/Calculator/tests/test_calculator.cpp",
-  "output": "CMakeFiles/tests.dir/tests/test_calculator.cpp.obj"
+  "output": "CMakeFiles/test_calculator.dir/tests/test_calculator.cpp.obj"
 },
 {
   "directory": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-build/googlemock",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++20 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\build\\_deps\\googletest-src\\googlemock\\src\\gmock-all.cc",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\build\\_deps\\googletest-src\\googlemock\\src\\gmock-all.cc",
   "file": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
 },
 {
   "directory": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-build/googlemock",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++20 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\build\\_deps\\googletest-src\\googlemock\\src\\gmock_main.cc",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\build\\_deps\\googletest-src\\googlemock\\src\\gmock_main.cc",
   "file": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
   "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
 },
 {
   "directory": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-build/googletest",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++20 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\build\\_deps\\googletest-src\\googletest\\src\\gtest-all.cc",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\build\\_deps\\googletest-src\\googletest\\src\\gtest-all.cc",
   "file": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-src/googletest/src/gtest-all.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
 },
 {
   "directory": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-build/googletest",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++20 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\build\\_deps\\googletest-src\\googletest\\src\\gtest_main.cc",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\Enrique\\Documents\\VScode\\CI\\Calculator\\build\\_deps\\googletest-src\\googletest\\src\\gtest_main.cc",
   "file": "C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-src/googletest/src/gtest_main.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
 }

@@ -70,29 +70,24 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/string \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/type_traits \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_construct.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/move.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/assertions.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/new_allocator.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/move.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream_insert.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/assertions.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_function.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/binders.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
@@ -102,6 +97,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/debug.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bit \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
@@ -109,12 +105,10 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/alloc_traits.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_construct.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/string_view \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib \
@@ -131,7 +125,6 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uses_allocator.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uses_allocator_args.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tuple \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/system_error \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
@@ -184,11 +177,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
@@ -216,15 +205,8 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_lock.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stop_token \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_thread.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/semaphore \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/semaphore_base.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_timed_wait.h \
- C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/this_thread_sleep.h \
- C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/semaphore.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/mutex \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/any \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
@@ -234,6 +216,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
  C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
  C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
  C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/unordered_map \
@@ -241,6 +224,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable_policy.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array \
+ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
  C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/utility \
  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h \

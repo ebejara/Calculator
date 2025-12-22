@@ -171,30 +171,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named calculator_app
+# Target rules for targets named Calculator
 
 # Build rule for target.
-calculator_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 calculator_app
-.PHONY : calculator_app
+Calculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Calculator
+.PHONY : Calculator
 
 # fast build rule for target.
-calculator_app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator_app.dir\build.make CMakeFiles/calculator_app.dir/build
-.PHONY : calculator_app/fast
+Calculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculator.dir\build.make CMakeFiles/Calculator.dir/build
+.PHONY : Calculator/fast
 
 #=============================================================================
-# Target rules for targets named tests
+# Target rules for targets named test_calculator
 
 # Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests
-.PHONY : tests
+test_calculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_calculator
+.PHONY : test_calculator
 
 # fast build rule for target.
-tests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+test_calculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_calculator.dir\build.make CMakeFiles/test_calculator.dir/build
+.PHONY : test_calculator/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -253,7 +253,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator_app.dir\build.make CMakeFiles/calculator_app.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculator.dir\build.make CMakeFiles/Calculator.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -261,7 +261,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator_app.dir\build.make CMakeFiles/calculator_app.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculator.dir\build.make CMakeFiles/Calculator.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -269,7 +269,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator_app.dir\build.make CMakeFiles/calculator_app.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculator.dir\build.make CMakeFiles/Calculator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 tests/test_calculator.obj: tests/test_calculator.cpp.obj
@@ -277,7 +277,7 @@ tests/test_calculator.obj: tests/test_calculator.cpp.obj
 
 # target to build an object file
 tests/test_calculator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/tests/test_calculator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_calculator.dir\build.make CMakeFiles/test_calculator.dir/tests/test_calculator.cpp.obj
 .PHONY : tests/test_calculator.cpp.obj
 
 tests/test_calculator.i: tests/test_calculator.cpp.i
@@ -285,7 +285,7 @@ tests/test_calculator.i: tests/test_calculator.cpp.i
 
 # target to preprocess a source file
 tests/test_calculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/tests/test_calculator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_calculator.dir\build.make CMakeFiles/test_calculator.dir/tests/test_calculator.cpp.i
 .PHONY : tests/test_calculator.cpp.i
 
 tests/test_calculator.s: tests/test_calculator.cpp.s
@@ -293,7 +293,7 @@ tests/test_calculator.s: tests/test_calculator.cpp.s
 
 # target to generate assembly for a file
 tests/test_calculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/tests/test_calculator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_calculator.dir\build.make CMakeFiles/test_calculator.dir/tests/test_calculator.cpp.s
 .PHONY : tests/test_calculator.cpp.s
 
 # Help Target
@@ -309,12 +309,12 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... calculator_app
+	@echo ... Calculator
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... tests
+	@echo ... test_calculator
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

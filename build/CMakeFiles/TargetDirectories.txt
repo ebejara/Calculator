@@ -1,5 +1,5 @@
-C:/Users/Enrique/Documents/VScode/CI/Calculator/build/CMakeFiles/calculator_app.dir
-C:/Users/Enrique/Documents/VScode/CI/Calculator/build/CMakeFiles/tests.dir
+C:/Users/Enrique/Documents/VScode/CI/Calculator/build/CMakeFiles/Calculator.dir
+C:/Users/Enrique/Documents/VScode/CI/Calculator/build/CMakeFiles/test_calculator.dir
 C:/Users/Enrique/Documents/VScode/CI/Calculator/build/CMakeFiles/test.dir
 C:/Users/Enrique/Documents/VScode/CI/Calculator/build/CMakeFiles/edit_cache.dir
 C:/Users/Enrique/Documents/VScode/CI/Calculator/build/CMakeFiles/rebuild_cache.dir

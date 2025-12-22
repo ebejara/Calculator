@@ -1,43 +1,44 @@
-cmake_minimum_required(VERSION 3.14)  # Needed for FetchContent
-project(CalculatorProject LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.14)
 
-# --- C++ Standard ---
-set(CMAKE_CXX_STANDARD 20)
+# Ta bort onödig varning 
+cmake_policy(SET CMP0135 NEW)
+
+project(Calculator LANGUAGES CXX)
+
+# Använd C++17 eller högre
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 
-# --- Main executable ---
-add_executable(calculator_app src/main.cpp)
+# Huvudprogrammet
+add_executable(Calculator src/main.cpp)
 
-# Public headers are in include/
-target_include_directories(calculator_app PRIVATE include)
+# Inkludera "include"-mappen så att #include "calculator.h" fungerar överallt
+target_include_directories(Calculator PRIVATE include)
 
-# --- GoogleTest (automatically downloaded) ---
+# Valgfritt: Lägg executables i output-mappen
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/output)
+
+# ==================== GoogleTest ====================
+
 include(FetchContent)
-
 FetchContent_Declare(
     googletest
     URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
-    # For Windows users, avoid CRT conflicts
 )
 
-# For Windows: prevent overriding the parent project's compiler/linker settings
+# För Windows – undvik konflikt med runtime-bibliotek
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-# --- Test executable ---
-add_executable(tests 
-    tests/test_calculator.cpp
-)
+# Test-executable
+add_executable(test_calculator tests/test_calculator.cpp)
 
-target_include_directories(tests PRIVATE include)
+target_include_directories(test_calculator PRIVATE include)
 
-target_link_libraries(tests 
-    GTest::gtest_main   # pulls in gtest + gtest_main
-)
+target_link_libraries(test_calculator GTest::gtest_main)
 
 include(GoogleTest)
-gtest_discover_tests(tests)
+gtest_discover_tests(test_calculator)

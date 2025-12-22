@@ -151,7 +151,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/CalculatorProject
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Calculator
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -210,7 +210,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CalculatorProject
+CMAKE_PROJECT_NAME:STATIC=Calculator
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -314,13 +314,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-CalculatorProject_BINARY_DIR:STATIC=C:/Users/Enrique/Documents/VScode/CI/Calculator/build
+Calculator_BINARY_DIR:STATIC=C:/Users/Enrique/Documents/VScode/CI/Calculator/build
 
 //Value Computed by CMake
-CalculatorProject_IS_TOP_LEVEL:STATIC=ON
+Calculator_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-CalculatorProject_SOURCE_DIR:STATIC=C:/Users/Enrique/Documents/VScode/CI/Calculator
+Calculator_SOURCE_DIR:STATIC=C:/Users/Enrique/Documents/VScode/CI/Calculator
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=C:/Users/Enrique/Documents/VScode/CI/Calculator/build/_deps
@@ -594,7 +594,7 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/CalculatorProject
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/Calculator
 //Compiler reason failure
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
