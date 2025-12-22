@@ -18,15 +18,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up CMake
-        uses: lukka/get-cmake@v3.28.2   # Latest stable CMake + Ninja
+      - name: Set up CMake and Ninja
+        uses: lukka/get-cmake@v3.28.2
 
       - name: Configure CMake
-        run: cmake -B build -DCMAKE_BUILD_TYPE=Release
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Release -Wno-dev
 
       - name: Build
-        run: cmake --build build --config Release
+        run: cmake --build build --config Release --verbose
 
       - name: Run tests
         working-directory: build
-        run: ctest --output-on-failure
+        run: ctest --verbose --output-on-failure
