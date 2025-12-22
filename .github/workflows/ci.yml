@@ -7,22 +7,35 @@ on:
     branches: [ main, master ]
 
 jobs:
-  build-and-test:
-    name: Windows - C++17
+  build-test-coverage:
+    name: Windows - Build, Test & Coverage
     runs-on: windows-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # No need for lukka/get-cmake anymore!
-
       - name: Configure CMake
-        run: cmake -B build -DCMAKE_BUILD_TYPE=Release
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Debug
 
       - name: Build
-        run: cmake --build build --config Release
+        run: cmake --build build --config Debug
 
       - name: Run tests
         working-directory: build
         run: ctest --output-on-failure --verbose
+
+      - name: Install OpenCppCoverage
+        run: |
+          choco install opencppcoverage --no-progress -y
+
+      - name: Generate coverage report
+        run: |
+          OpenCppCoverage --sources=*src* --export_type=cobertura:coverage.xml -- ./build/test_calculator.exe
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: coverage.xml
+          fail_ci_if_error: true
+          verbose: true
