@@ -12,6 +12,6 @@ int main()
     std::cout << a << " - " << b << " = " << calc.subtract(a, b) << '\n';
     std::cout << a << " * " << b << " = " << calc.multiply(a, b) << '\n';
     std::cout << a << " / " << b << " = " << calc.divide(a, b) << '\n';
-
+    std::cout << "Program over!\n";
     return 0;
 }
