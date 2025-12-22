@@ -31,13 +31,13 @@ jobs:
           echo "C:\Program Files\OpenCppCoverage" >> $env:GITHUB_PATH
 
       - name: Generate coverage report
-        working-directory: build   # Critical: Run from build folder where the exe is
+        working-directory: build
         run: |
-          OpenCppCoverage --sources=${{ github.workspace }}\src* --export_type=cobertura:coverage.xml -- test_calculator.exe
+          OpenCppCoverage --working_dir . --sources ${{ github.workspace }}\src* --export_type=cobertura:coverage.xml -- test_calculator.exe
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          files: build/coverage.xml   # Path from root
+          files: build/coverage.xml
           fail_ci_if_error: true
           verbose: true
