@@ -28,10 +28,11 @@ jobs:
       - name: Install OpenCppCoverage
         run: |
           choco install opencppcoverage --no-progress -y
+          echo "C:\Program Files\OpenCppCoverage" >> $env:GITHUB_PATH
 
       - name: Generate coverage report
         run: |
-          OpenCppCoverage --sources=*src* --export_type=cobertura:coverage.xml -- ./build/test_calculator.exe
+          OpenCppCoverage --sources=src\* --export_type=cobertura:coverage.xml -- ./build/Debug/test_calculator.exe
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
