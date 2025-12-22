@@ -1,0 +1,7 @@
+build/
+output/
+.cache/
+*.user
+*.suo
+*.sln
+*.vcxproj
