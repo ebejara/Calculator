@@ -15,27 +15,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Configure CMake
-        run: cmake -B build -DCMAKE_BUILD_TYPE=Debug
+      - name: Install MinGW and tools
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake mingw-w64-x86_64-make mingw-w64-x86_64-gcovr
+
+      - name: Configure CMake (MinGW)
+        shell: msys2 {0}
+        run: cmake -B build -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug
 
       - name: Build
-        run: cmake --build build --config Debug
+        shell: msys2 {0}
+        run: cmake --build build
 
       - name: Run tests
+        shell: msys2 {0}
         working-directory: build
         run: ctest --output-on-failure --verbose
 
-      - name: Install OpenCppCoverage
-        run: |
-          choco install opencppcoverage --no-progress -y
-          echo "C:\Program Files\OpenCppCoverage" >> $env:GITHUB_PATH
-
       - name: Generate coverage report
+        shell: msys2 {0}
         working-directory: build
-        shell: pwsh   # Explicitly use PowerShell (good practice)
-        run: |
-          $exe = "${{ github.workspace }}\build\test_calculator.exe"
-          OpenCppCoverage --sources="${{ github.workspace }}\src*" --export_type=cobertura:coverage.xml -- $exe
+        run: gcovr --root .. --xml -o coverage.xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
