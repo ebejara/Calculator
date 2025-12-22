@@ -28,10 +28,7 @@ jobs:
             mingw-w64-x86_64-python-pip
             mingw-w64-x86_64-libxml2
             mingw-w64-x86_64-libxslt
-
-      - name: Install gcovr
-        shell: msys2 {0}
-        run: pip install gcovr
+            mingw-w64-x86_64-gcovr  # Install gcovr directly via pacman (no pip needed)
 
       - name: Configure CMake (MinGW with coverage)
         shell: msys2 {0}
