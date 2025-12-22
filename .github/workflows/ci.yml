@@ -21,19 +21,16 @@ jobs:
       - name: Build
         run: cmake --build build --config Debug
 
-      - name: Run tests (just to verify)
-        working-directory: build
-        run: ctest --output-on-failure --verbose
-
       - name: Install OpenCppCoverage
         run: |
           choco install opencppcoverage --no-progress -y
           echo "C:\Program Files\OpenCppCoverage" >> $env:GITHUB_PATH
 
-      - name: Generate coverage report
-        run: |
-          $exe = "${{ github.workspace }}\build\test_calculator.exe"
-          OpenCppCoverage --sources="${{ github.workspace }}\src*" --export_type=cobertura:coverage.xml -- $exe
+      - name: Run tests with coverage collection
+        run: OpenCppCoverage --sources="${{ github.workspace }}\src*" --export_type=binary:coverage.cov -- ctest --test-dir build --output-on-failure --verbose
+
+      - name: Export coverage report
+        run: OpenCppCoverage --input_coverage=coverage.cov --export_type=cobertura:coverage.xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
