@@ -9,14 +9,13 @@ on:
 jobs:
   build-and-test:
     name: Windows - C++17
-    runs-on: windows-latest   # Only Windows
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up CMake and Ninja
-        uses: lukka/get-cmake@v3.28.2
+      # No need for lukka/get-cmake anymore!
 
       - name: Configure CMake
         run: cmake -B build -DCMAKE_BUILD_TYPE=Release
