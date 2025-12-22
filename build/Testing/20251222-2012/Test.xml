@@ -25,11 +25,11 @@
 	ProcessorClockFrequency="2000"
 	>
 	<Testing>
-		<StartDateTime>Dec 22 22:17 V[NON-UTF-8-BYTE-0xE4]steuropa, normaltid</StartDateTime>
-		<StartTestTime>1766438243</StartTestTime>
+		<StartDateTime>Dec 22 22:42 V[NON-UTF-8-BYTE-0xE4]steuropa, normaltid</StartDateTime>
+		<StartTestTime>1766439725</StartTestTime>
 		<TestList/>
-		<EndDateTime>Dec 22 22:17 V[NON-UTF-8-BYTE-0xE4]steuropa, normaltid</EndDateTime>
-		<EndTestTime>1766438243</EndTestTime>
+		<EndDateTime>Dec 22 22:42 V[NON-UTF-8-BYTE-0xE4]steuropa, normaltid</EndDateTime>
+		<EndTestTime>1766439725</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
