@@ -30,6 +30,9 @@ jobs:
           choco install opencppcoverage --no-progress -y
           echo "C:\Program Files\OpenCppCoverage" >> $env:GITHUB_PATH
 
+      - name: Debug - List built executables
+        run: dir build /s /b | findstr test_calculator.exe
+
       - name: Generate coverage report
         run: |
           OpenCppCoverage --sources=src* --export_type=cobertura:coverage.xml -- ./build/test_calculator.exe
