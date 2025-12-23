@@ -27,10 +27,12 @@ jobs:
           echo "C:\Program Files\OpenCppCoverage" >> $env:GITHUB_PATH
 
       - name: Run tests with coverage collection
-        run: OpenCppCoverage --sources="${{ github.workspace }}\src*" --export_type=binary:coverage.cov -- ctest --test-dir build --output-on-failure --verbose
+        run: |
+          OpenCppCoverage --sources="${{ github.workspace }}\src*" --sources="${{ github.workspace }}\include*" --export_type=binary:coverage.cov -- ctest --test-dir build --output-on-failure --verbose
 
-      - name: Export coverage report
-        run: OpenCppCoverage --input_coverage=coverage.cov --export_type=cobertura:coverage.xml
+      - name: Export coverage to Cobertura XML
+        run: |
+          OpenCppCoverage --input_coverage=coverage.cov --export_type=cobertura:coverage.xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
