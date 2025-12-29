@@ -5,15 +5,15 @@
             "name": "(gdb/lldb) Launch Calculator",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/output/calculator",      // Linux/macOS
-            // "program": "${workspaceFolder}/output/calculator.exe", // Windows
+            //"program": "${workspaceFolder}/output/calculator",      // Linux/macOS
+             "program": "${workspaceFolder}/output/calculator.exe", // Windows
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",           // use "lldb" on macOS, "gdb" on Linux, "cppvsdbg" on Windows if using MSVC
-            "miDebuggerPath": "/usr/bin/gdb",   // adjust if needed
+            "miDebuggerPath": "gdb.exe",   // adjust if needed
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing",
